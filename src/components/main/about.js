@@ -1,12 +1,17 @@
 import { User, Code, Database, Globe, Mail, ArrowRight, Github } from "lucide-react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHtml5, faCss3,faJsSquare, faJava, faDatabase, faGitAlt} from "@fortawesome/free-brands-svg-icons";
+import { faDatabase as faDatabaseSolid } from "@fortawesome/free-solid-svg-icons";
+
 
 const About = () => {
-    const skills = [{name: "HTML", icon: <Code size={32} />}, 
-        {name: "Tailwind CSS", icon: <Code size={32} />}, 
-        {name: "JavaScript-React", icon: <Code size={32} />}, 
-        {name: "Java", icon: <Code size={32} />}, 
-        {name: "PLPGSQL", icon: <Database size={32} />}, 
-        {name: "Git", icon: <Globe size={32} />}];
+    const skills = [
+        {name: "HTML", icon: <FontAwesomeIcon icon={faHtml5} className="text-orange-500 text-xl" />},
+        {name: "Tailwind CSS", icon: <FontAwesomeIcon icon={faCss3} className="text-cyan-500 text-xl" />}, 
+        {name: "JavaScript-React", icon: <FontAwesomeIcon icon={faJsSquare} className="text-yellow-500 text-xl" />}, 
+        {name: "Java", icon: <FontAwesomeIcon icon={faJava} className="text-red-500 text-xl" />}, 
+        {name: "PLPGSQL", icon: <FontAwesomeIcon icon={faDatabaseSolid} className="text-green-500 text-xl" />}, 
+        {name: "Git", icon: <FontAwesomeIcon icon={faGitAlt} className="text-orange-500 text-xl" />}];
 
     return (
         <div>
