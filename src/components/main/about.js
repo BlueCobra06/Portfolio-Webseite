@@ -41,11 +41,6 @@ const About = () => {
                                     Neben meinem Studium arbeite ich kontinuierlich an persönlichen Projekten und erweitere meine Fähigkeiten in modernen Webtechnologien.
                                 </p>
                             </div>
-                            <div className="bg-white/5 border-l-4 border-purple-500 rounded-r-xl p-6">
-                                <p className="text-lg leading-relaxed text-gray-200">
-                                    Neben meinem Studium arbeite ich kontinuierlich an persönlichen Projekten und erweitere meine Fähigkeiten in modernen Webtechnologien.
-                                </p>
-                            </div>
                         </div>
                         <div className="flex flex-wrap gap-3 mt-6">
                             <button className="group flex items-center gap-2 px-6 py-3 bg-indigo-600 hover:bg-indigo-500 text-white font-semibold rounded-lg transition-all duration-200 hover:scale-105 shadow-lg">
