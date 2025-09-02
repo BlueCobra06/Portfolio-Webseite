@@ -2,8 +2,8 @@ import { Send, Mail } from "lucide-react";
 
 const Contact = () => {
     return (
-        <div className="flex flex-col items-center justify-center h-full bg-gradient-to-br from-slate-900 to-gray-900 p-10">
-            <div className="w-full flex flex-col items-center">   
+        <div className="flex flex-col items-center justify-center min-h-full bg-gradient-to-br from-slate-900 to-gray-900 ">
+            <div className="w-full flex flex-col items-center p-10 mt-35">   
                 <div className="flex flex-row items-center gap-2 mb-4 bg-white/10 rounded-2xl p-8 border border-white/10 mb-8 w-full max-w-2xl">
                     <div className="rounded-xl bg-gradient-to-br from-indigo-500/20 to-purple-500/20 p-4 border border-indigo-500/30 mr-1">
                         <Mail size={30} className="text-white"/>
@@ -14,7 +14,7 @@ const Contact = () => {
                     </div>
                 </div>  
                 <section className="border border-white/10 bg-white/5 backdrop-blur-lg rounded-2xl p-10 w-full max-w-2xl">  
-                    <form className="flex flex-col gap-4"> 
+                    <form className="flex flex-col gap-4" aria-label="Kontaktformular"> 
                         <label className="text-white font-bold text-xl">Name</label>
                         <input type="text" placeholder="Dein Name" className="border border-white/10 rounded-xl px-4 py-2 bg-white/5" required/>
 
@@ -32,7 +32,7 @@ const Contact = () => {
                                                             transition-all duration-300 
                                                             shadow-xl backdrop-blur-lg rounded-xl 
                                                             border border-indigo-500/30 
-                                                            w-full flex items-center justify-center gap-2">
+                                                            w-full flex items-center justify-center gap-2" aria-label="Nachricht senden">
                                 <Send size={20} className="text-white"/>
                                 Senden
                             </button>

@@ -43,12 +43,12 @@ const About = () => {
                             </div>
                         </div>
                         <div className="flex flex-wrap gap-3 mt-6">
-                            <button className="group flex items-center gap-2 px-6 py-3 bg-indigo-600 hover:bg-indigo-500 text-white font-semibold rounded-lg transition-all duration-200 hover:scale-105 shadow-lg">
+                            <button className="group flex items-center gap-2 px-6 py-3 bg-indigo-600 hover:bg-indigo-500 text-white font-semibold rounded-lg transition-all duration-200 hover:scale-105 shadow-lg" aria-label="GitHub Profil öffnen">
                                 <Github size={20} />
                                 GitHub
                                 <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
                             </button>
-                            <button className="group flex items-center gap-2 px-6 py-3 bg-white/10 hover:bg-white/20 text-white font-semibold rounded-lg transition-all duration-200 hover:scale-105 border border-white/20">
+                            <button className="group flex items-center gap-2 px-6 py-3 bg-white/10 hover:bg-white/20 text-white font-semibold rounded-lg transition-all duration-200 hover:scale-105 border border-white/20" aria-label="Kontaktformular anzeigen">">
                                 <Mail size={20} />
                                 Kontakt
                             </button>

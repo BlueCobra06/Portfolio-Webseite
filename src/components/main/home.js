@@ -3,7 +3,7 @@ import { ChevronDownIcon, Code, Folder, Mail } from "lucide-react";
 const Home = () => {
     const scrollToSection = (sectionId) => {
         const element = document.getElementById(sectionId);
-        const yHeight = -70;
+        const yHeight = -80;
         const y = element.getBoundingClientRect().top + window.pageYOffset + yHeight;
         window.scrollTo({top: y, behavior: 'smooth'});
     };
@@ -19,11 +19,15 @@ const Home = () => {
                         <div className="flex gap-3 w-full flex-col">
                             <button className="w-full px-6 py-3 rounded-full text-white bg-gradient-to-r from-indigo-900 to-indigo-800 
                                                 backdrop-blur-sm text-xl font-bold flex items-center justify-center gap-2 border border-white/20 font-semibold 
-                                                hover:from-indigo-800 hover:to-indigo-700 hover:scale-[1.02] transition-all duration-300 shadow-lg">
+                                                hover:from-indigo-800 hover:to-indigo-700 hover:scale-[1.02] transition-all duration-300 shadow-lg"
+                                                aria-label="Meine Projekte anzeigen"
+                                                onClick={() => scrollToSection('projects')}>
                                 <Folder size={20} className="text-white" />
                                 Meine Projekte</button>
                             <button className="w-full px-6 py-3 rounded-full text-white border border-white text-xl font-bold flex items-center justify-center gap-2 
-                                                hover:from-indigo-800 hover:to-indigo-700 hover:scale-[1.02] transition-all duration-300 shadow-lg">
+                                                hover:from-indigo-800 hover:to-indigo-700 hover:scale-[1.02] transition-all duration-300 shadow-lg"
+                                                aria-label="Kontaktformular anzeigen"
+                                                onClick={() => scrollToSection('contact')}>
                                 <Mail size={20} className="text-white" />
                                 Kontakt aufnehmen</button>
                         </div>

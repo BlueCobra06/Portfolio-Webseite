@@ -66,13 +66,13 @@ const Projects = () => {
                             </div>    
                             <div className="flex gap-3">
                                 <button className="flex-1 flex items-center justify-center gap-2 py-3 bg-indigo-500/80 backdrop-blur-sm hover:bg-indigo-500 text-white font-semibold rounded-xl transition-all duration-300 border border-indigo-400/30">
-                                    <a href={projects.link} className="flex items-center gap-2">
+                                    <a href={projects.link} className="flex items-center gap-2" aria-label="GitHub Repository des Projekts öffnen">
                                         <Github size={18}/>
                                         GitHub
                                     </a>
                                 </button>
                                 <button className="flex-1 flex items-center justify-center gap-2 py-3 bg-emerald-500/80 backdrop-blur-sm hover:bg-emerald-500 text-white font-semibold rounded-xl transition-all duration-300 border border-emerald-400/30">
-                                    <a href={projects.link} className="flex items-center gap-2">
+                                    <a href={projects.link} className="flex items-center gap-2" aria-label="Live Demo des Projekts öffnen">
                                         <Link size={18}/>
                                         Live Demo
                                     </a>
