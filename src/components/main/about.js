@@ -16,7 +16,7 @@ const About = () => {
     return (
         <div>
             <div className="flex flex-col items-start h-full bg-gradient-to-br from-slate-900 to-gray-900 p-10 justify-center items-center">
-                <div className="w-full ">
+                <div className="w-full lg:max-w-5xl md:max-w-3xl sm:max-w-xl">
                     <div className="bg-white/5 rounded-2xl p-8 backdrop-blur-sm border border-white/10">
                         <div className="flex items-center gap-4 text-white mb-8">
                             <div className="p-4 bg-gradient-to-br from-indigo-500/20 to-purple-500/20 rounded-xl border border-indigo-500/30">
@@ -55,7 +55,7 @@ const About = () => {
                         </div>
                     </div>
                 </div>
-                <div className="w-full mt-16">
+                <div className="w-full lg:max-w-5xl md:max-w-3xl sm:max-w-xl mt-16">
                     <div className="bg-gradient-to-br from-indigo-900/20 to-purple-900/20 p-8 rounded-2xl backdrop-blur-sm border border-indigo-500/20">
                         <div className="flex flex-row items-center gap-2 mb-4">
                             <div className="rounded-xl bg-gradient-to-br from-indigo-500/20 to-purple-500/20 p-4 border border-indigo-500/30 mr-1">

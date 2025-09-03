@@ -32,7 +32,7 @@ const Projects = () => {
                         <div className="w-32 h-1 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full"></div>
                 </div>
             </div>
-            <div className="grid grid-cols-1 gap-8 mt-5 w-full">
+            <div className="grid grid-cols-1 gap-8 mt-5 w-full lg:max-w-5xl md:max-w-3xl sm:max-w-xl">
                 {projects.map((projects,index) => {
                     return (
                         <div key={index} className="group bg-gradient-to-br from-gray-800/60 to-gray-900/70 backdrop-blur-sm border border-indigo-500/40 rounded-xl px-6 py-4 transition-all duration-300 transform hover:scale-[1.02] hover:shadow-2xl hover:shadow-indigo-900/20 hover:border-indigo-400/60">
